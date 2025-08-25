@@ -1,4 +1,3 @@
-
 module pwm (
     input clk,
     input reset,
