@@ -1,5 +1,3 @@
-
-
 `default_nettype none
 
 module tt_um_TT06_pwm (
@@ -18,8 +16,8 @@ module tt_um_TT06_pwm (
 
     // Duty cycle from ui_in[6:0]
     wire [6:0] dc = ui_in[6:0];
-    reg pwm_out;
-    reg pwm_out1;
+    wire pwm_out;
+    wire pwm_out1;
 
     // Internal PWM module
     pwm pwm_inst (
