@@ -8,6 +8,7 @@ async def reset_dut(dut):
     dut.rst_n.value = 1
     await RisingEdge(dut.clk)
 
+
 @cocotb.test()
 async def test_pwm_debug(dut):
     cocotb.start_soon(Clock(dut.clk, 10, units="ns").start())
